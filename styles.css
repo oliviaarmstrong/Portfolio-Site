@@ -1,0 +1,151 @@
+/* Base Style */
+html {
+  font-size: 16px;
+  background-color: #eaddca;
+}
+body {
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Gils Sans", sans-serif;
+  color: black;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gils Sans", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  /* line-height: 1; */
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+h6 {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+p {
+  font-weight: lighter;
+}
+
+/* Buttons */
+button.normal {
+  height: 30px;
+  padding: 0 30px;
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.normal:hover {
+  background-color: lightgray;
+  transition: 0.5s;
+}
+button.normal:active {
+  background-color: gray;
+}
+
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  height: 30px;
+  padding: 0 30px;
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+button.success {
+  height: 30px;
+  padding: 0 30px;
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.success:hover {
+  background-color: lightgray;
+  transition: 0.5s;
+}
+button.success:active {
+  background-color: #84d1a3;
+}
+
+button.error {
+  height: 30px;
+  padding: 0 30px;
+  color: black;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button.error:hover {
+  background-color: lightgray;
+  transition: 0.5s;
+}
+
+button.error:active {
+  background-color: #fc5151;
+}
+
+/* Links */
+a {
+  color: grey;
+  font-weight: 500px;
+}
+
+.painting {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  line-height: 0;
+  padding: 10px;
+}

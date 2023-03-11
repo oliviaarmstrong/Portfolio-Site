@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MP2: Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Olivia Armstrong" />
+    <meta name="description" content="My first ever HTML page, wow!" />
+    <meta property="og:title" content="Your Page Title" />
+    <meta property="og:description" content="Brief description" />
+    <meta property="og:image" content="/some-image.png" />
+    <meta property="og:url" content="/this-page.html" />
+    <meta property="og:site_name" content="Your Site Name" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="image description" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+      * {
+        margin: 0;
+        margin-bottom: 0;
+      }
+
+      /* HEADER CONTAINER */
+      header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        background-color: #C4A484;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid#D2B48C;
+        box-sizing: border-box;
+      }
+
+      .picture {
+        max-height: 300px;
+        max-width: 300px;
+        overflow: hidden;
+        padding: 10px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      /* PROJECTS CONTAINER */
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #D2B48C;
+      }
+
+      .project {
+        border: 2px solid black;
+        padding: 10px;
+        flex: 1;
+      }
+
+      /* TO GET HELP WITH: Want to make a side header, column */
+      /* .sideheader {
+        display: flex;
+        width: 20%;
+        height: 100%;
+        background-color: blue;
+       
+      } */
+
+      /* .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      } */
+
+    </style>
+  </head>
+  <body>
+  <header>
+    <div class ="info"> 
+      <h3> <strong> Olivia Armstrong </strong> </h3> 
+      <h5> Data Analytics Student </h5>
+      <h6> I am a student at the Chapman Fowler School of Engineering. 
+        During my time at Chapman, I have had the opportunity to engage in several exciting projects linked below.
+        I seek to find a career in which I can combine my academic skillset in data science with my passion for video games.</h6> 
+      <h5> <strong> My Links </strong> </h5>
+      <ul>
+        <li><a href="https://github.com/oliviaarmstrong" > GitHub </a> </li>
+        <li><a href = "https://www.linkedin.com/in/olivia-m-armstrong/" > LinkedIn </a> </li>
+      </ul>
+    </div>
+    <div class = "picture"> <img src = "https://i.imgur.com/e2ZutfN.jpg"> </div>
+  </header>
+  <main>
+    <div class ="project"> 
+      <h2> <center>  Woman in Data Science Datathon </center> </h2>
+      <p> Performed all aspects of the data science life cycle including examining, cleaning, transforming,
+         and modeling data to provide long term weather forecasting to help communities adapt to extreme weather events caused by climate change. </p> 
+      <a href="https://github.com/oliviaarmstrong/2023-Women-in-Data-Science-Datathon" > Link </a>
+    </div>
+    <div class ="project"> 
+        <h2> <center> Conway's Game of Life C++ </center> </h2>
+        <p> Successfully implemented three game modes of Conway's Game of life as a tool to learn how to code various data structures and algorithms. </p> 
+        <a href="https://github.com/kaychanela/CPSC350_SP22_ASSIGNMENT3_KANDERSON_OARMSTRONG" > Link </a>
+    </div>
+    <div class ="project"> 
+          <h2> <center> 3D Printing Projects </center> </h2>
+          <p> Some of my favorite 3D printing projects I have done! </p> 
+          <img class="painting" id="img" src=""></img>
+          <center> <button class = normal disabled id = "prev"> Prev</button> <button class = normal id = "next"> Next </button> </center>
+    </div>
+      </main>
+   <!-- <div class = sideheader>
+     <div class = "item">
+       SIDE HEADER
+     </div>
+    </div>  -->
+    <script src="script.js"></script>
+  </body>
+</html>
